@@ -184,3 +184,9 @@ verify: Waiting 1 seconds to verify that tasks are stable...
 Error response from daemon: service r4cmd8xu5tgu6vzow75f27mk8 not found
 sunbeam@sunbeam-student:~/cdac/classwork/day06/app1$ ^C
 sunbeam@sunbeam-student:~/cdac/classwork/day06/app1$ 
+
+Socket problem
+
+sudo usermod -aG docker jenkins
+sudo systemctl restart jenkins
+ls -l /var/run/docker.sock
